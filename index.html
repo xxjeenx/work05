@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge">
+    <title>the body shop 이벤트 프로모션</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/video_set.css">
+    <link rel="shortcut icon" href="images/bodyshop.png">
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+<style>
+    body{
+        background-color: #000;
+    }
+    /*scroll bar 배경 색상 변경*/
+    ::-webkit-scrollbar-thumb {background: #486db0;}
+
+    #container{
+        background: url("images/full_bodyshop.png") no-repeat center;
+    }
+
+
+    #container .section {
+        height: 980px;
+        background-color: transparent;
+    }
+
+    #footer {
+        position: relative;
+        height: 500px;}
+
+    #footer .txt_box{
+        width: 790px;
+        height: 128px;
+        position: absolute;
+        top: 35%;
+        right: 10%;
+    }
+    #footer .txt_box .txt1{
+        margin-bottom: 30px;
+    }
+    #footer .txt_box .txt2{
+        position: relative;
+    }
+    #footer .txt_box .txt2:after{
+        content: '';
+        background-image: url(images/next_page/hover_next.png);
+        width: 538px;
+        height: 68px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    #footer .txt_box .arrow{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    #footer .txt_box .arrow:after{
+        content: '';
+        background-image: url(images/next_page/hover_arrow.png);
+        width: 99px;
+        height: 92px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    /*호버*/
+    #footer .txt_box:hover .txt2:after,
+    #footer .txt_box:hover .arrow:after{
+        opacity: 1;
+        transition: all 0.7s;
+    }
+
+
+</style>
+
+
+<section class="viewport">
+
+    <div id="scroll-container">
+
+
+        <div id="container">
+
+                <div id="section01" class="section"></div>
+                <div id="section02" class="section"></div>
+                <div id="section03" class="section"></div>
+                <div id="section04" class="section"></div>
+                <div id="section05" class="section"></div>
+                <div id="section06" class="section"></div>
+                <div id="section07" class="section"></div>
+                <div id="section08" class="section"></div>
+                <div id="section09" class="section"></div>
+                <div id="footer">
+                  <a href="mailto:xxjeenx@gmail.com">
+                    <div class="txt_box">
+                        <div class="txt1"><img src="images/next_page/txt_1.png" alt=""></div>
+                        <div class="txt2"><img src="images/next_page/next_2.png" alt=""></div>
+                        <div class="arrow"><img src="images/next_page/arrow_3.png" alt=""></div>
+                    </div>
+                  </a>
+                </div>
+
+        </div>
+    </div>
+</section>
+
+<script src="js/TweenMax.min.js"></script>
+<script src="js/smooth_scroll.js"></script>
+
+
+</body>
+</html>
