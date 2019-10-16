@@ -23,25 +23,25 @@
     /*scroll bar 배경 색상 변경*/
     ::-webkit-scrollbar-thumb {background: #486db0;}
 
-    #container{
-        background: url("images/full_bodyshop.png") no-repeat center;
-    }
+    #container01{background: url("images/s1.jpg") no-repeat center;}
+    #container02{background: url("images/s2.jpg") no-repeat center;}
+    #container03{background: url("images/s3.jpg") no-repeat center;}
 
 
-    #container .section {
+    .section {
         height: 980px;
         background-color: transparent;
     }
 
     #footer {
         position: relative;
-        height: 500px;}
+        height: 124px;}
 
     #footer .txt_box{
         width: 790px;
         height: 128px;
         position: absolute;
-        top: 35%;
+        top: -160%;
         right: 10%;
     }
     #footer .txt_box .txt1{
@@ -90,14 +90,15 @@
 <section class="viewport">
 
     <div id="scroll-container">
-
-
-        <div id="container">
-
+        <div id="container01">
                 <div id="section01" class="section"></div>
                 <div id="section02" class="section"></div>
+        </div>
+        <div id="container02">
                 <div id="section03" class="section"></div>
                 <div id="section04" class="section"></div>
+        </div>
+        <div id="container03">
                 <div id="section05" class="section"></div>
                 <div id="section06" class="section"></div>
                 <div id="section07" class="section"></div>
@@ -112,6 +113,7 @@
                     </div>
                   </a>
                 </div>
+        </div>
 
         </div>
     </div>
